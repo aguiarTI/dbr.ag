@@ -1,0 +1,57 @@
+/** ========================
+============================
+@project    : DBR.ag
+@version    : 1.0
+@author     : Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+.contact {
+	height: auto;
+	div {
+		&.box {
+			background-color: @patternColorText5;
+			top: 0;
+			padding: 70px 0 0 0;
+			form {
+				width: 70%;
+				max-width: 570px;
+			}
+		}
+		img {
+			margin: 30px auto 60px;
+		}
+	}
+	h2 {
+		color: @patternColorText8;
+		width: 80%;
+		max-width: 1050px;
+		margin: 0 auto;
+		&:before {
+			content: '';
+			background-color: @patternColorText5;
+			.sprite(@icon-brain);
+			width: 55px;
+			height: 52px;
+			margin: 0 0 0 -27px;
+			position: absolute;
+			bottom: -105px;
+			left: 50%;
+			z-index: 2;
+		}
+		&:after {
+			content: '';
+			background-color: @patternColorText8;
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			bottom: -80px;
+			left: 0;
+			z-index: 1;
+		}
+	}
+}
+/** ========================
+@end
+=========================**/

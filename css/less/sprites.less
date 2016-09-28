@@ -1,0 +1,322 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@ico-academy-name: ico-academy;
+@ico-academy-x: 0px;
+@ico-academy-y: 0px;
+@ico-academy-offset-x: 0px;
+@ico-academy-offset-y: 0px;
+@ico-academy-width: 139px;
+@ico-academy-height: 111px;
+@ico-academy-total-width: 239px;
+@ico-academy-total-height: 227px;
+@ico-academy-image: '../img/sprite.png';
+@ico-academy: 0px 0px 0px 0px 139px 111px 239px 227px '../img/sprite.png' ico-academy;
+@ico-cv-name: ico-cv;
+@ico-cv-x: 144px;
+@ico-cv-y: 0px;
+@ico-cv-offset-x: -144px;
+@ico-cv-offset-y: 0px;
+@ico-cv-width: 95px;
+@ico-cv-height: 111px;
+@ico-cv-total-width: 239px;
+@ico-cv-total-height: 227px;
+@ico-cv-image: '../img/sprite.png';
+@ico-cv: 144px 0px -144px 0px 95px 111px 239px 227px '../img/sprite.png' ico-cv;
+@ico-facebook-name: ico-facebook;
+@ico-facebook-x: 155px;
+@ico-facebook-y: 116px;
+@ico-facebook-offset-x: -155px;
+@ico-facebook-offset-y: -116px;
+@ico-facebook-width: 25px;
+@ico-facebook-height: 25px;
+@ico-facebook-total-width: 239px;
+@ico-facebook-total-height: 227px;
+@ico-facebook-image: '../img/sprite.png';
+@ico-facebook: 155px 116px -155px -116px 25px 25px 239px 227px '../img/sprite.png' ico-facebook;
+@ico-github-name: ico-github;
+@ico-github-x: 185px;
+@ico-github-y: 116px;
+@ico-github-offset-x: -185px;
+@ico-github-offset-y: -116px;
+@ico-github-width: 25px;
+@ico-github-height: 25px;
+@ico-github-total-width: 239px;
+@ico-github-total-height: 227px;
+@ico-github-image: '../img/sprite.png';
+@ico-github: 185px 116px -185px -116px 25px 25px 239px 227px '../img/sprite.png' ico-github;
+@ico-job-name: ico-job;
+@ico-job-x: 0px;
+@ico-job-y: 116px;
+@ico-job-offset-x: 0px;
+@ico-job-offset-y: -116px;
+@ico-job-width: 95px;
+@ico-job-height: 111px;
+@ico-job-total-width: 239px;
+@ico-job-total-height: 227px;
+@ico-job-image: '../img/sprite.png';
+@ico-job: 0px 116px 0px -116px 95px 111px 239px 227px '../img/sprite.png' ico-job;
+@ico-twitter-name: ico-twitter;
+@ico-twitter-x: 100px;
+@ico-twitter-y: 173px;
+@ico-twitter-offset-x: -100px;
+@ico-twitter-offset-y: -173px;
+@ico-twitter-width: 25px;
+@ico-twitter-height: 25px;
+@ico-twitter-total-width: 239px;
+@ico-twitter-total-height: 227px;
+@ico-twitter-image: '../img/sprite.png';
+@ico-twitter: 100px 173px -100px -173px 25px 25px 239px 227px '../img/sprite.png' ico-twitter;
+@icon-brain-name: icon-brain;
+@icon-brain-x: 100px;
+@icon-brain-y: 116px;
+@icon-brain-offset-x: -100px;
+@icon-brain-offset-y: -116px;
+@icon-brain-width: 50px;
+@icon-brain-height: 52px;
+@icon-brain-total-width: 239px;
+@icon-brain-total-height: 227px;
+@icon-brain-image: '../img/sprite.png';
+@icon-brain: 100px 116px -100px -116px 50px 52px 239px 227px '../img/sprite.png' icon-brain;
+@icon-message-name: icon-message;
+@icon-message-x: 130px;
+@icon-message-y: 173px;
+@icon-message-offset-x: -130px;
+@icon-message-offset-y: -173px;
+@icon-message-width: 25px;
+@icon-message-height: 25px;
+@icon-message-total-width: 239px;
+@icon-message-total-height: 227px;
+@icon-message-image: '../img/sprite.png';
+@icon-message: 130px 173px -130px -173px 25px 25px 239px 227px '../img/sprite.png' icon-message;
+@ico-academy-2x-name: ico-academy-2x;
+@ico-academy-2x-x: 0px;
+@ico-academy-2x-y: 0px;
+@ico-academy-2x-offset-x: 0px;
+@ico-academy-2x-offset-y: 0px;
+@ico-academy-2x-width: 278px;
+@ico-academy-2x-height: 222px;
+@ico-academy-2x-total-width: 478px;
+@ico-academy-2x-total-height: 454px;
+@ico-academy-2x-image: '../img/sprite@2x.png';
+@ico-academy-2x: 0px 0px 0px 0px 278px 222px 478px 454px '../img/sprite@2x.png' ico-academy-2x;
+@ico-cv-2x-name: ico-cv-2x;
+@ico-cv-2x-x: 288px;
+@ico-cv-2x-y: 0px;
+@ico-cv-2x-offset-x: -288px;
+@ico-cv-2x-offset-y: 0px;
+@ico-cv-2x-width: 190px;
+@ico-cv-2x-height: 222px;
+@ico-cv-2x-total-width: 478px;
+@ico-cv-2x-total-height: 454px;
+@ico-cv-2x-image: '../img/sprite@2x.png';
+@ico-cv-2x: 288px 0px -288px 0px 190px 222px 478px 454px '../img/sprite@2x.png' ico-cv-2x;
+@ico-facebook-2x-name: ico-facebook-2x;
+@ico-facebook-2x-x: 310px;
+@ico-facebook-2x-y: 232px;
+@ico-facebook-2x-offset-x: -310px;
+@ico-facebook-2x-offset-y: -232px;
+@ico-facebook-2x-width: 50px;
+@ico-facebook-2x-height: 50px;
+@ico-facebook-2x-total-width: 478px;
+@ico-facebook-2x-total-height: 454px;
+@ico-facebook-2x-image: '../img/sprite@2x.png';
+@ico-facebook-2x: 310px 232px -310px -232px 50px 50px 478px 454px '../img/sprite@2x.png' ico-facebook-2x;
+@ico-github-2x-name: ico-github-2x;
+@ico-github-2x-x: 370px;
+@ico-github-2x-y: 232px;
+@ico-github-2x-offset-x: -370px;
+@ico-github-2x-offset-y: -232px;
+@ico-github-2x-width: 50px;
+@ico-github-2x-height: 50px;
+@ico-github-2x-total-width: 478px;
+@ico-github-2x-total-height: 454px;
+@ico-github-2x-image: '../img/sprite@2x.png';
+@ico-github-2x: 370px 232px -370px -232px 50px 50px 478px 454px '../img/sprite@2x.png' ico-github-2x;
+@ico-job-2x-name: ico-job-2x;
+@ico-job-2x-x: 0px;
+@ico-job-2x-y: 232px;
+@ico-job-2x-offset-x: 0px;
+@ico-job-2x-offset-y: -232px;
+@ico-job-2x-width: 190px;
+@ico-job-2x-height: 222px;
+@ico-job-2x-total-width: 478px;
+@ico-job-2x-total-height: 454px;
+@ico-job-2x-image: '../img/sprite@2x.png';
+@ico-job-2x: 0px 232px 0px -232px 190px 222px 478px 454px '../img/sprite@2x.png' ico-job-2x;
+@ico-twitter-2x-name: ico-twitter-2x;
+@ico-twitter-2x-x: 200px;
+@ico-twitter-2x-y: 346px;
+@ico-twitter-2x-offset-x: -200px;
+@ico-twitter-2x-offset-y: -346px;
+@ico-twitter-2x-width: 50px;
+@ico-twitter-2x-height: 50px;
+@ico-twitter-2x-total-width: 478px;
+@ico-twitter-2x-total-height: 454px;
+@ico-twitter-2x-image: '../img/sprite@2x.png';
+@ico-twitter-2x: 200px 346px -200px -346px 50px 50px 478px 454px '../img/sprite@2x.png' ico-twitter-2x;
+@icon-brain-2x-name: icon-brain-2x;
+@icon-brain-2x-x: 200px;
+@icon-brain-2x-y: 232px;
+@icon-brain-2x-offset-x: -200px;
+@icon-brain-2x-offset-y: -232px;
+@icon-brain-2x-width: 100px;
+@icon-brain-2x-height: 104px;
+@icon-brain-2x-total-width: 478px;
+@icon-brain-2x-total-height: 454px;
+@icon-brain-2x-image: '../img/sprite@2x.png';
+@icon-brain-2x: 200px 232px -200px -232px 100px 104px 478px 454px '../img/sprite@2x.png' icon-brain-2x;
+@icon-message-2x-name: icon-message-2x;
+@icon-message-2x-x: 260px;
+@icon-message-2x-y: 346px;
+@icon-message-2x-offset-x: -260px;
+@icon-message-2x-offset-y: -346px;
+@icon-message-2x-width: 50px;
+@icon-message-2x-height: 50px;
+@icon-message-2x-total-width: 478px;
+@icon-message-2x-total-height: 454px;
+@icon-message-2x-image: '../img/sprite@2x.png';
+@icon-message-2x: 260px 346px -260px -346px 50px 50px 478px 454px '../img/sprite@2x.png' icon-message-2x;
+@spritesheet-width: 239px;
+@spritesheet-height: 227px;
+@spritesheet-image: '../img/sprite.png';
+@spritesheet-sprites: @ico-academy @ico-cv @ico-facebook @ico-github @ico-job @ico-twitter @icon-brain @icon-message;
+@spritesheet: 239px 227px '../img/sprite.png' @spritesheet-sprites;
+@retina-spritesheet-width: 478px;
+@retina-spritesheet-height: 454px;
+@retina-spritesheet-image: '../img/sprite@2x.png';
+@retina-spritesheet-sprites: @ico-academy-2x @ico-cv-2x @ico-facebook-2x @ico-github-2x @ico-job-2x @ico-twitter-2x @icon-brain-2x @icon-message-2x;
+@retina-spritesheet: 478px 454px '../img/sprite@2x.png' @retina-spritesheet-sprites;
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+@ico-academy-group-name: ico-academy;
+@ico-academy-group: ico-academy @ico-academy @ico-academy-2x;
+@ico-cv-group-name: ico-cv;
+@ico-cv-group: ico-cv @ico-cv @ico-cv-2x;
+@ico-facebook-group-name: ico-facebook;
+@ico-facebook-group: ico-facebook @ico-facebook @ico-facebook-2x;
+@ico-github-group-name: ico-github;
+@ico-github-group: ico-github @ico-github @ico-github-2x;
+@ico-job-group-name: ico-job;
+@ico-job-group: ico-job @ico-job @ico-job-2x;
+@ico-twitter-group-name: ico-twitter;
+@ico-twitter-group: ico-twitter @ico-twitter @ico-twitter-2x;
+@icon-brain-group-name: icon-brain;
+@icon-brain-group: icon-brain @icon-brain @icon-brain-2x;
+@icon-message-group-name: icon-message;
+@icon-message-group: icon-message @icon-message @icon-message-2x;
+@retina-groups: @ico-academy-group @ico-cv-group @ico-facebook-group @ico-github-group @ico-job-group @ico-twitter-group @icon-brain-group @icon-message-group;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `retina-sprite` class sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+@icon-home-group: 'icon-home' @icon-home @icon-home-2x;
+
+.icon-home {
+  .retina-sprite(@icon-home-group);
+}
+*/
+.sprite-background-size(@sprite) {
+  @sprite-total-width: extract(@sprite, 7);
+  @sprite-total-height: extract(@sprite, 8);
+  background-size: @sprite-total-width @sprite-total-height;
+}
+
+.retina-sprite(@retina-group) {
+  @normal-sprite: extract(@retina-group, 2);
+  @retina-sprite: extract(@retina-group, 3);
+  .sprite(@normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    .sprite-image(@retina-sprite);
+    .sprite-background-size(@normal-sprite);
+  }
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: extract(@sprite, 10);
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
+
+/*
+The `.retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in LESS
+
+.retina-sprites(@retina-groups);
+*/
+.retina-sprites(@retina-groups, @i: 1) when (@i <= length(@retina-groups)) {
+  @retina-group: extract(@retina-groups, @i);
+  @sprite-name: extract(@retina-group, 1);
+  .@{sprite-name} {
+    .retina-sprite(@retina-group);
+  }
+  .retina-sprites(@retina-groups, @i + 1);
+}

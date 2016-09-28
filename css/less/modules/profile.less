@@ -1,0 +1,95 @@
+/** ========================
+============================
+@project    : DBR.ag
+@version    : 1.0
+@author     : Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+.profile {
+	h2, p, span {
+		color: @patternColorText;
+	}
+	h3 {
+		font-family: 'GothamBlack';
+		font-size: 3.7em;
+		color: @patternColorText4;
+	}
+	ul {
+		text-align: center;
+		margin: 60px auto;
+		position: relative;
+		display: inline-block;
+		li {
+			margin: auto 35px;
+			display: inline-block;
+			vertical-align: top;
+			&:before {
+				content: '';
+				border: 3px solid @patternColorText;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				width: 220px;
+				height: 220px;
+				display: block;
+			}
+			span {
+				font-family: 'GothamBook';
+				font-size: 2em;
+				margin: 30px auto 0 auto;
+				display: block;
+			}
+			&:nth-child(1) {
+				&:after {
+					content: '';
+					background: url(../img/sprites/ico-cv.png) center center no-repeat;
+					width: 95px;
+					height: 111px;
+					background-size: cover;
+					margin: 0 0 0 -46px;
+					position: absolute;
+					top: 60px;
+					left: 50%;
+				}
+			}
+			&:nth-child(2) {
+				&:after {
+					content: '';
+					background: url(../img/sprites/ico-job.png) center center no-repeat;
+					width: 95px;
+					height: 111px;
+					background-size: cover;
+					margin: 0 0 0 -38px;
+					position: absolute;
+					top: 60px;
+					left: 50%;
+				}
+			}
+			&:nth-child(3) {
+				&:after {
+					content: '';
+					background: url(../img/sprites/ico-academy.png) center center no-repeat;
+					width: 139px;
+					height: 111px;
+					background-size: cover;
+					margin: 0 0 0 -69px;
+					position: absolute;
+					top: 60px;
+					left: 50%;
+				}
+			}
+		}
+	}
+	div {
+		&.box {
+			margin: -300px auto 0 auto;
+			min-height: 660px;
+		}
+	}
+}
+
+/** ========================
+@end
+=========================**/

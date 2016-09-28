@@ -1,0 +1,396 @@
+/** ========================
+============================
+@project    : DBR.ag
+@version    : 1.0
+@author     : Thiago Aguiar - thiago.aguiar86@gmail.com
+@copyright  : 2016
+============================
+@begin
+=========================**/
+
+/**====================
+@retina-sprite
+=======================**/
+@media screen and (max-width: 767px) {
+	body {
+		h2 {
+			font-size: 2.2em;
+			width: 80%;
+			margin: 0 auto;
+		}
+		.profile {
+			div {
+				&.box {
+					margin-top: -430px;
+				}
+			}
+			ul {
+				margin-bottom: 30px;
+				li {
+					width: 100%;
+					margin: 15px auto;
+					float: left;
+					&:before {
+						width: 120px;
+						height: 120px;
+						margin: 0 auto;
+					}
+					span {
+						font-size: 1.4em;
+						margin-top: 10px;
+					}
+					&:nth-child(1) {
+						&:after {
+							content: '';
+							width: 45px;
+							height: 50px;
+							margin: 0 0 0 -22px;
+							top: 42px;
+							left: 50%;
+						}
+					}
+					&:nth-child(2) {
+						&:after {
+							content: '';
+							width: 45px;
+							height: 50px;
+							margin: 0 0 0 -18px;
+							top: 40px;
+							left: 50%;
+						}
+					}
+					&:nth-child(3) {
+						&:after {
+							width: 60px;
+							height: 50px;
+							margin: 0 0 0 -29px;
+							top: 40px;
+							left: 50%;
+						}
+					}
+				}
+			}
+			h3 {
+				font-size: 2em;
+				margin-top: 20px;
+			}
+		}
+		.skills {
+			ul {
+				max-width: inherit;
+				padding: 0;
+				li {
+					span {
+						text-align: left;
+					}
+					&.line-1 {
+						width: 90%;
+						margin: 0 auto;
+					}
+					&.line-2, &.line-3, &.line-4, &.line-5, &.line-6, &.line-7, &.line-8, &.line-9, &.line-10, &.line-11, &.line-12, &.line-15, &.line-16 {
+						&:before {
+							content: none;
+						}					
+					}
+					&.line-4 {
+						&:after {
+							content: none;
+						}
+					}
+					&.line-2 {
+						&:after {
+							top: 40px;
+							left: 10%;
+						}
+						span {
+							top: 38px;
+							left: 20%;
+						}
+					}
+					&.line-6 {
+						&:after {
+							top: 120px;
+							left: 10%;
+						}
+						span {
+							top: 118px;
+							left: 20%;
+						}
+						img {
+							width: 220px;
+							height: auto;
+							margin: 160px auto 0 20%;
+							float: left;
+						}
+					}
+					&.line-9 {
+						&:after {
+							top: 300px;
+							left: 10%;
+							right: inherit;
+						}
+						span {
+							top: 298px;
+							left: 20%;
+							right: inherit;
+						}
+					}
+					&.line-10 {
+						&:after {
+							top: 380px;
+							left: 10%;
+							right: inherit;
+						}
+						span {
+							top: 378px;
+							left: 20%;
+							right: inherit;
+						}
+					}
+					&.line-12 {
+						&:after {
+							top: 460px;
+							left: 10%;
+							right: inherit;
+						}
+						span {
+							top: 458px;
+							left: 20%;
+							right: inherit;
+						}
+					}
+					&.line-16 {
+						&:after {
+							top: 530px;
+							left: 10%;
+							right: inherit;
+						}
+						span {
+							top: 528px;
+							left: 20%;
+							right: inherit;
+						}
+					}
+				}
+			}
+		}
+		.contact {
+			div {
+				&.box {
+					form {
+						width: 90%;
+						label {
+							&.age {
+								width: 100%;
+								float: none;
+							}
+							&.genre {
+								width: 100%;
+								margin-left: 0;
+								float: none;
+							}
+							&.cash {
+								width: 100%;
+								float: none;
+							}
+							&.facebook,
+							&.twitter,
+							&.github,
+							&.message {
+								input[type='url'],
+								textarea {
+									width: 88%;
+									padding-left: 10%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	body {
+		h2 {
+			font-size: 2.8em;
+			width: 80%;
+			margin: 0 auto;
+		}
+		.profile {
+			ul {
+				li {
+					margin: auto 20px;
+					&:before {
+						width: 160px;
+						height: 160px;
+						margin: 0 auto;
+					}
+					&:nth-child(1) {
+						&:after {
+							content: '';
+							width: 70px;
+							height: 80px;
+							margin: 0 0 0 -35px;
+							top: 45px;
+							left: 50%;
+						}
+					}
+					&:nth-child(2) {
+						&:after {
+							content: '';
+							width: 70px;
+							height: 80px;
+							margin: 0 0 0 -29px;
+							top: 45px;
+							left: 50%;
+						}
+					}
+					&:nth-child(3) {
+						&:after {
+							width: 80px;
+							height: 70px;
+							margin: 0 0 0 -39px;
+							top: 50px;
+							left: 50%;
+						}
+					}					
+				}
+			}
+		}
+		.skills {
+			ul {
+				max-width: inherit;
+				padding: 0;
+				li {
+					&.line-6 {
+						img {
+							width: 220px;
+							height: auto;
+							margin: 110px auto 0 auto;
+						}
+					}
+					&.line-10 {
+						&:before {
+							max-width: inherit;
+							width: 230px;
+						}
+					}
+					&.line-13 {
+						&:before {
+							right: 270px;
+						}
+					}
+					&.line-14 {
+						&:before {
+							right: 270px;
+						}
+					}
+					&.line-15 {
+						&:before {
+							left: 171px;
+						}
+					}
+					&.line-16 {
+						&:before {
+							left: 144px;
+						}
+						&:after {
+							left: 230px;
+						}
+						span {
+							left: 200px;
+						}
+					}
+				}
+			}
+		}
+		.contact {
+			div {
+				&.box {
+					form {
+						label {
+							&.genre {
+								float: right;
+							}
+							&.cash {
+								width: 100%;
+								float: none;
+							}
+						}
+					}
+				}
+			}
+		}		
+	}
+}
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+	body {
+		.skills {
+			ul {
+				li {
+					&.line-6 {
+						img {
+							width: 260px;
+							height: auto;
+							margin: 110px auto 0 auto;
+						}
+					}
+					&.line-10 {
+						&:before {
+							width: 230px;
+						}
+						&:after {
+							right: 140px;
+						}
+					}
+					&.line-13 {
+						&:before {
+							right: 270px;
+						}
+					}
+					&.line-14 {
+						&:before {
+							right: 270px;
+						}
+					}
+					&.line-15 {
+						&:before {
+							left: 171px;
+						}
+					}
+					&.line-16 {
+						&:before {
+							left: 145px;
+						}
+						&:after {
+							left: 232px;
+						}
+						span {
+							left: 200px;
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+@media screen and (max-width: 1024px) {
+	body {
+		.skills {
+			ul {
+				max-width: 650px;
+				padding: 0;
+			}
+		}
+	}
+}
+@media screen (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	body {
+	
+	}
+}
+
+/** ========================
+@end
+=========================**/
